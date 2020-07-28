@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@277&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-image: url('wavy2.png');
+  background-size: cover;
+  background-size: 100%;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    padding:10px;
+    border: 1px solid rgb(255, 255, 255,0);
+    transition: border 0.3s ease;
+}
+
+a:hover{
+    border: 1px solid rgba(255, 255, 255,1);
+}
+
+.nadpis {
+  display: flex;
+  font-size: 100px;
+  align-items: flex-start;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+}
+@media only screen and (orientation:portrait) {
+  .topnav{
+      position: fixed;
+      right: 20px;
+      padding: 2%;
+      text-align: right;
+      padding-top: 20px;
+      padding-bottom: 0;
+      padding-right: 2%;
+      float: top;
+      font-size: 4vw;
+      font-family: 'Manrope', sans-serif;
+      color: rgb(255, 255, 255);
+  }
+}
+@media only screen and (orientation:landscape) {
+  .topnav{
+      position: fixed;
+      right: 20px;
+      padding: 2%;
+      text-align: right;
+      padding-top: 20px;
+      padding-bottom: 0;
+      padding-right: 2%;
+      float: top;
+      font-size: 2vw;
+      font-family: 'Manrope', sans-serif;
+      color: rgb(255, 255, 255);
+  }
+}
+.spacer{
+    height: 220px;
+    margin-bottom: 100px;
+}
+
+h1{
+    font-size: 32px;
+    font-family: 'Manrope', sans-serif;
+    color: black;
+}
+
+h2{
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+    color: black;
+}
+
+.box {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-size: 40px;
+    font-family: 'Manrope', sans-serif;
+    
+}
+
+.a {
+    text-align: center;
+    padding: 20px;
+    grid-column: 1 / 1;
+    grid-row: 1;
+}
+.b {
+    grid-column: 1 / 4 ;
+    grid-row: 1;
+}
+.c {
+    grid-column: 1 / 4 ;
+    grid-row: 2 ;
+    font-size: 18px;
+    
+}
+.d {
+    text-align: center;
+    font-size: 32px;
+    grid-column: 1 / 4 ;
+    grid-row: 3 ;
+    padding: 0px;
+}
+.e {
+  text-align: center;
+  font-size: 32px;
+  grid-column: 1 / 4 ;
+  grid-row: 4 ;
+  padding: 10px;
+  padding-top:20%;
+}
+@media only screen and (orientation:landscape) {
+  .infoBox{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 44% 44%;
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    margin-top: 90px;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 100%;
+    padding: 15px;
+    border: 1px solid rgb(255, 255, 255);
+  }
+}
+
+@media only screen and (orientation:portrait) {
+  .infoBox{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 44% 44%;
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    margin-top: 90px;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 100%;
+    padding: 15px;
+    border: 1px solid rgb(255, 255, 255);
+  }
+}
+
+
+/* width */
+::-webkit-scrollbar {
+width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: rgb(255, 255, 255);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: rgb(212, 212, 212);
+}
+
+span {
+  position: sticky;
+  top: calc(30% - 150px);
+  height: 100px;
+  display: inline-flex;
+  align-items: left;
+  font-family: 'Manrope', sans-serif;
+  margin-left: 2px;
+  margin-right: 2px;
+  font-size: 120px;
+}
+
+input[type=text] {
+  width: 80%;
+  padding: 5px 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 24px;
+  font-family: 'Manrope', sans-serif;
+}
+input[type=submit]{
+  width: 150px;
+  height: 50px;
+  font-size: 24px;
+  font-family: 'Manrope', sans-serif;
+}
+
+
+
