@@ -66,6 +66,22 @@ a:hover{
     padding: 15px;
     border: 1px solid rgb(255, 255, 255);
   }
+
+  .introText{
+    font-family: 'Manrope', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 3vh;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 100%;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    text-align: center;
+  }
+
   .c1 {
     margin-top: 23vw;
   }
@@ -162,6 +178,22 @@ a:hover{
     padding: 10px;
     border: 1px solid rgb(255, 255, 255);
   }
+
+  .introText{
+    font-family: 'Manrope', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 2.5vh;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 100%;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    text-align: center;
+  }
+
   .c1 {
     margin-top: 46vw;
   }
@@ -232,28 +264,30 @@ h2{
 
 
 
-.a {
+.podcastPhoto {
     text-align: center;
-    padding: 20px;
+    padding: 0px;
     grid-column: 1 / 1;
     grid-row: 1;
+    filter: brightness(1000);
 }
 .podcastTitle {
-    grid-column: 1 / 4 ;
+    grid-column: 2 / 4 ;
     grid-row: 1;
     padding: 10px;
-    font-size: 48%;   
+    font-size: 58%;   
 }
 .podcastDescription {
     grid-column: 1 / 4 ;
     grid-row: 2 ;
     font-size: 20%;  
-    padding: 10px;  
+    padding: 6px;
 }
 .podcastPlayer {
     grid-column: 1 / 4 ;
     grid-row: 3 ;
-    padding: 10px;
+    font-size: 20%;
+    padding: auto;
 }
 
 
@@ -279,12 +313,90 @@ background: rgb(212, 212, 212);
 
 
 
-
-audio { 
-    width: 96%; 
-    border-radius: 90px;
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
 }
 
+.row {
+  display: -webkit-box;
+  display: flex;
+}
+.row .col {
+  -webkit-box-flex: 1;
+          flex: 1;
+}
+.row .col:last-child {
+  margin-left: 1em;
+}
 
+/* Accordion styles */
+.tabs {
+  overflow: hidden;
+  width: 98%;
+  font-family: 'Manrope', sans-serif;
+}
 
+.tab {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+.tab-label {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+  font-size: 1.5em;
+  /* background: #2a2a2a; */
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  /* Icon */
+}
+.tab-label:hover {
+  border-bottom: 1px solid white;
+}
+.tab-label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #2a2a2a;
+  background: rgba(0, 0, 0, 0.356);
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+.tab-close {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  cursor: pointer;
+}
+.tab-close:hover {
+  background: #ffffff2f;
+}
+
+input:checked + .tab-label {
+  background: #000000;
+  border: 1px solid white;
+}
+input:checked + .tab-label::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
 
