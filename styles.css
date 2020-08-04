@@ -130,7 +130,7 @@ a:hover{
     padding: 20px;
     font-size: 2vw;
     font-family: 'Manrope', sans-serif; 
-}
+  }
 }
 @media only screen and (orientation:portrait) {
   .nadpis {
@@ -168,7 +168,7 @@ a:hover{
   .podcastBox{
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr 4fr;
     font-size: 60px;
     color: rgb(255, 255, 255);
     margin-top: 30px;
@@ -177,6 +177,7 @@ a:hover{
     height: 100%;
     padding: 10px;
     border: 1px solid rgb(255, 255, 255);
+    overflow: hidden;
   }
 
   .introText{
@@ -242,8 +243,9 @@ a:hover{
     padding: 20px;
     font-size: 4vw;
     font-family: 'Manrope', sans-serif; 
-  } 
+  }  
 }
+
 
 .spacer{
     height: 15vw;
@@ -262,15 +264,6 @@ h2{
     color: black;
 }
 
-
-
-.podcastPhoto {
-    text-align: center;
-    padding: 0px;
-    grid-column: 1 / 1;
-    grid-row: 1;
-    filter: brightness(1000);
-}
 .podcastTitle {
     grid-column: 2 / 4 ;
     grid-row: 1;
@@ -289,7 +282,13 @@ h2{
     font-size: 20%;
     padding: auto;
 }
-
+.podcastPhoto {
+  text-align: center;
+  padding: 0px;
+  grid-column: 1 / 1;
+  grid-row: 1;
+  filter: brightness(1000);
+} 
 
 /* width */
 ::-webkit-scrollbar {
